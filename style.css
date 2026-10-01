@@ -579,3 +579,110 @@ select {
     grid-template-columns: 1fr;
   }
 }
+
+/* Packages Section */
+.page-heading {
+  text-align: center;
+  padding-block: var(--lg-space);
+}
+
+.page-heading p {
+  color: var(--muted-text);
+  max-width: 50ch;
+  margin-inline: auto;
+}
+
+.filter-tabs {
+  display: flex;
+  justify-content: center;
+  gap: var(--sm-space);
+  margin-bottom: var(--lg-space);
+  flex-wrap: wrap;
+}
+
+.filter-tab {
+  padding: 0.5rem 1.2rem;
+  border-radius: var(--pill-radius);
+  border: 1px solid var(--border-color);
+  color: var(--muted-text);
+  font-size: 0.85rem;
+  cursor: pointer;
+  background: none;
+}
+
+.filter-tab-active {
+  background-color: var(--cyan-color);
+  border-color: var(--cyan-color);
+  color: var(--bg-color);
+  font-weight: 600;
+}
+
+.pricing-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: var(--surface-color);
+  border: 1px solid var(--border-color);
+  border-radius: var(--md-radius);
+  overflow: hidden;
+}
+
+.pricing-table th,
+.pricing-table td {
+  padding: var(--sm-space) var(--md-space);
+  text-align: left;
+  border-bottom: 1px solid var(--border-color);
+  font-size: 0.9rem;
+}
+
+.pricing-table th {
+  color: var(--muted-text);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+}
+
+.pricing-table tr:last-child td {
+  border-bottom: none;
+}
+
+.pricing-table td.price {
+  color: var(--pink-color);
+  font-weight: 700;
+}
+
+.callout {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--md-space);
+  background-color: var(--surface-color);
+  border: 1px solid var(--border-color);
+  border-radius: var(--md-radius);
+  padding: var(--md-space) var(--lg-space);
+  margin-top: var(--lg-space);
+  flex-wrap: wrap;
+}
+
+.callout h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.2rem;
+}
+
+/* 768px Media Queries */
+@media (max-width: 768px) {
+  .table-scroll {
+    overflow-x: auto;
+    /* -webkit-overflow-scrolling gives momentum scrolling on iOS Safari */
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .pricing-table {
+    min-width: 640px;
+  }
+
+  .callout {
+    flex-direction: column;
+    text-align: center;
+  }
+}
