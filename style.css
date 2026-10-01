@@ -929,3 +929,84 @@ select {
     position: static;
   }
 }
+
+/*  Contact Section */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: var(--lg-space);
+}
+
+.contact-form textarea.form-ctrl {
+  background-color: var(--surface-color);
+  border: 1px solid var(--border-color);
+  border-radius: var(--md-radius);
+  padding: var(--md-space);
+}
+
+.info-card {
+  background-color: var(--surface-color);
+  border: 1px solid var(--border-color);
+  border-radius: var(--md-radius);
+  padding: var(--md-space);
+}
+
+.info-card-row {
+  display: flex;
+  gap: 0.6rem;
+  margin-bottom: var(--sm-space);
+  font-size: 0.9rem;
+}
+
+.info-card-row i {
+  color: var(--cyan-color);
+  width: 18px;
+  padding-top: 0.2rem;
+}
+
+.info-card-row strong {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--muted-text);
+  font-weight: 500;
+}
+
+.faq-items {
+  border-bottom: 1px solid var(--border-color);
+}
+
+.faq-items summary {
+  padding-block: var(--sm-space);
+  cursor: pointer;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+.faq-items summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-items summary i {
+  color: var(--cyan-color);
+  transition: transform 0.2s ease;
+}
+
+.faq-items[open] summary i {
+  transform: rotate(180deg);
+}
+
+.faq-items p {
+  color: var(--muted-text);
+  padding-bottom: var(--sm-space);
+  font-size: 0.9rem;
+}
+
+/* Contact 768px Media Queires */
+@media (max-width: 768px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
