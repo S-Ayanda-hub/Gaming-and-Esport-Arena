@@ -34,8 +34,8 @@
 
         <div class="navbarLinks" id="navbarLinks">
           <a href="index.html" class="navLink">Home</a>
-          <a href="about.html" class="navLink navLink-active">About Us</a>
-          <a href="packages.html" class="navLink">Package</a>
+          <a href="about.html" class="navLink navLink">About Us</a>
+          <a href="packages.html" class="navLink-active">Package</a>
           <a href="feeCalc.html" class="navLink">Calculator</a>
           <a href="contact.html" class="navLink">Contact Us</a>
           <a href="packages.html" class="btn primary-btn small-btn">Book Now</a>
@@ -44,148 +44,125 @@
     </header>
 
     <!-- Intro Section -->
-    <section class="section">
-      <div class="container about-intro-grid">
-        <div>
-          <span class="tag">Our Esport Community</span>
-          <h1>About Our Esports Haven</h1>
-        </div>
-        <div class="card-img" style="aspect-ratio: 4/3">
-          <i class="fa-regular fa-image"></i>
-        </div>
-      </div>
-    </section>
+    <div class="container page-heading">
+      <span class="tag">Battle Plans</span>
+      <h1>Choose Your Experience</h1>
+      <p>
+        Select from various pricing tiers below to find the package that fits
+        your squad.
+      </p>
+    </div>
 
-    <!-- Mission Statement and Stats -->
-    <section class="section" style="background-color: var(--bg-color-alt)">
-      <div class="container mission-grid">
+    <!-- Filter Tab -->
+    <div class="container">
+      <div class="filter-tabs">
+        <button class="filter-tab filter-tab-active" data-category="all">
+          All
+        </button>
+        <button class="filter-tab" data-category="gaming">Gaming</button>
+        <button class="filter-tab" data-category="esports">Esports</button>
+        <button class="filter-tab" data-category="vr">VR</button>
+        <button class="filter-tab" data-category="party">
+          Birthday Parties
+        </button>
+      </div>
+
+      <!-- Pricing table -->
+      <div class="table-scroll">
+        <table class="pricing-table">
+          <thead>
+            <tr>
+              <th>Package Name</th>
+              <th>Duration</th>
+              <th>Players</th>
+              <th>Includes</th>
+              <th>Price</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr data-category="esports">
+              <td>Esports Training Package</td>
+              <td>3 Hours</td>
+              <td>1 - 5 Players</td>
+              <td>Strategy coaching, team communication</td>
+              <td class="price">R1 500</td>
+              <td>
+                <a href="packageDetails.html" class="btn outline-btn small-btn"
+                  >Book Now</a
+                >
+              </td>
+            </tr>
+
+            <tr data-category="vr">
+              <td>Virtual Reality Experience</td>
+              <td>1 Hours</td>
+              <td>1 Player</td>
+              <td>Full gaming gear, staff assistance</td>
+              <td class="price">R750</td>
+              <td>
+                <a href="packageDetails.html" class="btn outline-btn small-btn"
+                  >Book Now</a
+                >
+              </td>
+            </tr>
+
+            <tr data-category="gaming">
+              <td>Racing Simulator Challange</td>
+              <td>1 Hours</td>
+              <td>1 - 4 Players</td>
+              <td>Full gaming gear, game of choice, staff assistance</td>
+              <td class="price">R750</td>
+              <td>
+                <a href="packageDetails.html" class="btn outline-btn small-btn"
+                  >Book Now</a
+                >
+              </td>
+            </tr>
+
+            <tr data-category="party">
+              <td>Escape Room Challange</td>
+              <td>2 Hours</td>
+              <td>1 Player</td>
+              <td>Team Challange, puzzel themed roo</td>
+              <td class="price">R750</td>
+              <td>
+                <a href="packageDetails.html" class="btn outline-btn small-btn"
+                  >Book Now</a
+                >
+              </td>
+            </tr>
+
+            <tr data-category="party">
+              <td>Birthday Party Package</td>
+              <td>4 Hours</td>
+              <td>10 - 20 Player</td>
+              <td>Reserved area space, multi-player setups</td>
+              <td class="price">R1 500</td>
+              <td>
+                <a href="packageDetails.html" class="btn outline-btn small-btn"
+                  >Book Now</a
+                >
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Meet The Leaders -->
+      <div class="callout">
         <div>
-          <span class="tag">Mission Statement</span>
-          <h2>Empowering Every Player to Reach Their Next Level.</h2>
-          <p class="muted-text" style="margin-top: var(--space-sm)">
-            Next Level Arena was built by gamers, for gamers. We believe in
-            breaking down barriers to accessibility for tournament-grade
-            hardware, coaching, and a real esports community.
+          <h3>Custom Team Requirements</h3>
+          <p class="muted-text">
+            Tell us what your squad needs and we'll build a quote around it
           </p>
         </div>
-
-        <div class="stats-grid">
-          <div class="stat-card">
-            <div class="stat-card-number pink-text">50+</div>
-            <div class="stat-card-label">Elite PC Rigs</div>
-          </div>
-
-          <div class="stat-card">
-            <div class="stat-card-number cyan-text">20+</div>
-            <div class="stat-card-label">Latest Consoles</div>
-          </div>
-
-          <div class="stat-card">
-            <div class="stat-card-number cyan-text">500+</div>
-            <div class="stat-card-label">Tournaments Hosted</div>
-          </div>
-
-          <div class="stat-card">
-            <div class="stat-card-number pink-text">5k+</div>
-            <div class="stat-card-label">Guild Members</div>
-          </div>
-        </div>
+        <a href="feeCalc.html" class="btn primary-btn">Fee</a>
       </div>
-    </section>
-
-    <!-- Why You Should Join -->
-    <section class="section">
-      <div class="container">
-        <div class="class-heading">
-          <h2>Why Batlle With Us?</h2>
-        </div>
-
-        <div class="feature-grid">
-          <div class="feature-card">
-            <div class="feature-card-icon">
-              <i class="fa-solid fa-gear"></i>
-            </div>
-            <h3>Pro Equipment</h3>
-            <p class="muted-text">
-              RTX 4090 GPUs, Ryzen 9 CPUs, 360Hz monitors and top-tier
-              peripherals.
-            </p>
-          </div>
-          <div class="feature-card">
-            <div class="feature-card-icon">
-              <i class="fa-solid fa-graduation-cap"></i>
-            </div>
-            <h3>Expert Coaches</h3>
-            <p class="muted-text">
-              Learn directly from former ranked and professional game
-              specialists.
-            </p>
-          </div>
-          <div class="feature-card">
-            <div class="feature-card-icon">
-              <i class="fa-solid fa-trophy"></i>
-            </div>
-            <h3>Tournament Ready</h3>
-            <p class="muted-text">
-              Dedicated event operations built for competitive-grade play.
-            </p>
-          </div>
-          <div class="feature-card">
-            <div class="feature-card-icon">
-              <i class="fa-solid fa-users"></i>
-            </div>
-            <h3>Community Hub</h3>
-            <p class="muted-text">
-              Join our community, meet new teammates, and connect after hours.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Meet The Leaders -->
-    <section class="section" style="background-color: var(--bg-color-alt)">
-      <div class="container">
-        <div class="section-heading">
-          <h2>Meet The Leadership</h2>
-        </div>
-
-        <div class="team-grid">
-          <article class="card">
-            <div class="team-card-photo">
-              <i class="fa-reagular fa-image"></i>
-            </div>
-            <div class="team-card-body">
-              <strong>Jason "Viper" Holden</strong>
-              <span class="muted-text">Founder &amp; Head Coach</span>
-            </div>
-          </article>
-
-          <article class="card">
-            <div class="team-card-photo">
-              <i class="fa-reagular fa-image"></i>
-            </div>
-            <div class="team-card-body">
-              <strong>Sarah "Glitch" Chen</strong>
-              <span class="muted-text">Tournament Ops Director</span>
-            </div>
-          </article>
-        </div>
-
-        <article class="card">
-          <div class="team-card-photo">
-            <i class="fa-reagular fa-image"></i>
-          </div>
-          <div class="team-card-body">
-            <strong>Elena "Zero" Rostova</strong>
-            <span class="muted-text">Community &amp; VR Lead</span>
-          </div>
-        </article>
-      </div>
-    </section>
+    </div>
 
     <!-- Footer Section-->
-    <footer class="footer">
+    <footer class="footer" style="margin-top: var(--xl-space)">
       <div class="container footer-grid">
         <div>
           <a href="index.html" class="navbarLogo"
