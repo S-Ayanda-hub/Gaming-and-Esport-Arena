@@ -36,8 +36,8 @@
           <a href="index.html" class="navLink">Home</a>
           <a href="about.html" class="navLink navLink">About Us</a>
           <a href="packages.html" class="navLink">Package</a>
-          <a href="packageDetails.html" class="navLink-active">Packages</a>
-          <a href="feeCalc.html" class="navLink">Calculator</a>
+          <a href="packageDetails.html" class="navLink">Packages</a>
+          <a href="feeCalc.html" class="navLink-active">Calculator</a>
           <a href="contact.html" class="navLink">Contact Us</a>
           <a href="packages.html" class="btn primary-btn small-btn">Book Now</a>
         </div>
@@ -45,153 +45,181 @@
     </header>
 
     <!-- Intro Section -->
-    <section class="section">
-      <div class="container details-grid">
-        <div>
-          <span class="tag">Premium Booth</span>
-          <h1>VIP Gaming Experience</h1>
-          <div class="detail-price">
-            R1 500
-            <span class="muted-text" style="font-size: 0.9rem; font-weight: 400"
-              >/ Session</span
-            >
-          </div>
-          <p class="muted-text">
-            ailored specifically for competitive-minded players looking for an
-            absolute advantage. Set your custom setup config, warm up with pro
-            peripherals, and request guidance from our resident coach.
-          </p>
-          <a
-            href="feeCalc.html"
-            style="margin-top: var(--sm-space)"
-            class="btn primary-btn"
-            >Book Now</a
-          >
-        </div>
-        <div class="card-img" style="aspect-ratio: 4/3">
-          <i class="fa-regular fa-image"></i>
-        </div>
-      </div>
-    </section>
+    <div class="container page-heading">
+      <span class="tag">Calculator Estimator</span>
+      <h1>Estimate Fees Instantly</h1>
+      <p class="muted-text">
+        Select your package and add-ons below to see a live quote.
+      </p>
+    </div>
 
     <!-- Whats included / Quick Specs -->
-    <section class="section" style="padding-top: 0">
-      <div class="details-grid">
-        <div>
-          <h2>What's Included</h2>
-          <ul class="checklist">
-            <li><i class="fa-solid fa-check"></i>Private gaming booth</li>
-            <li><i class="fa-solid fa-check"></i>Premium gaming equipment</li>
-            <li><i class="fa-solid fa-check"></i>Food and drinks</li>
-            <li><i class="fa-solid fa-check"></i>Priority booking</li>
-            <li><i class="fa-solid fa-check"></i>Personal gaming assistant</li>
-          </ul>
-        </div>
+    <div class="container calc-grid" style="padding-bottom: var(--xl-space)">
+      <form onsubmit="return false;">
+        <!-- Step 1 -->
+        <div class="calc-step">
+          <span class="calc-step-label">01. Personal Registration</span>
 
-        <div>
-          <div class="specs-box">
-            <h3 style="margin-bottom: var(--sm-space); font-size: 1rem">
-              Quick Specifications
-            </h3>
-            <div class="spec-box-row">
-              <span>Duration</span><span>3 Hours Max</span>
+          <div class="form-group">
+            <label for="fullName">Full Name</label>
+            <input
+              type="text"
+              class="form-ctrl"
+              id="fullName"
+              placeholder="John Doe"
+            />
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="countryCode">Country Code</label>
+              <select class="form-ctrl" id="countryCode">
+                <option>+27</option>
+                <option>+44</option>
+                <option>+1</option>
+              </select>
             </div>
-            <div class="spec-box-row">
-              <span>Max Players</span><span>1-4</span>
-            </div>
-            <div class="spec-box-row">
-              <span>Age Limit</span><span>None</span>
-            </div>
-            <div class="spec-box-row">
-              <span>Equipment</span
-              ><span>RTX 4090, 240Hz, Full Peripherals</span>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input
+                type="tel"
+                id="phone"
+                class="form-ctrl"
+                placeholder="0800055555"
+              />
             </div>
           </div>
 
-          <h3
-            style="
-              margin-top: var(--md-space);
-              margin-bottom: var(--xs-space);
-              font-size: 0.9rem;
-            "
-          >
-            Station Gallery
-          </h3>
-          <div class="gallery">
-            <div class="gallery-thumb">
-              <i class="fa-regular fa-image"></i>
-            </div>
-            <div class="gallery-thumb">
-              <i class="fa-regular fa-image"></i>
-            </div>
-            <div class="gallery-thumb">
-              <i class="fa-regular fa-image"></i>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input
+              type="email"
+              id="email"
+              class="form-ctrl"
+              placeholder="you@example.com"
+            />
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="calc-step">
+          <span class="calc-step-label">02. Match Selection</span>
+
+          <div class="form-group">
+            <label for="packageSelect">Active Esports Package</label>
+
+            <select id="packageSelect" class="form-ctrl">
+              <option data-price="1500">
+                Esport Training Package - R1 500
+              </option>
+              <option data-price="750">Virtual Reality - R750</option>
+              <option data-price="750">
+                Racing Simulator Challange - R750
+              </option>
+              <option data-price="750">Escape Room Challenge - R750</option>
+              <option data-price="1500">Birthday Party Package - R1 500</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label>Squad Members</label>
+            <div class="stepper">
+              <button id="squadDecrease" type="button">
+                <i class="fa-solid fa-minus"></i>
+              </button>
             </div>
           </div>
         </div>
-      </div>
-    </section>
 
-    <!-- Alternative Experience-->
-    <section class="section" style="background-color: var(--bg-color-alt)">
-      <div class="container">
-        <h2 style="margin-bottom: var(--md-space)">Alternative Experience</h2>
+        <!-- Step 3 -->
+        <div class="calc-step">
+          <span class="calc-step-label">03. Squad Booster</span>
 
-        <div class="atl-grid">
-          <article class="card">
-            <div class="card-img"><i class="fa-regular fa-image"></i></div>
-            <div class="card-body">
-              <h3 style="font-size: 0.95rem">Ultimate Gamer Pass</h3>
-              <div class="card-footer">
-                <span class="card-price" style="font-size: 1rem">R1 500</span>
-                <a href="packageDetails.html" class="btn small-btn outline-btn"
-                  >Quick View</a
-                >
-              </div>
+          <div class="checkbox-row">
+            <input
+              type="checkbox"
+              id="discount5"
+              data-discount="5"
+              class="discount-check"
+            />
+            <label for="discount5">Two Bookings</label>
+            <span class="discount">-5%</span>
+          </div>
+
+          <div class="checkbox-row">
+            <input
+              type="checkbox"
+              id="discount10"
+              data-discount="10"
+              class="discount-check"
+            />
+            <label for="discount5">Three Bookings</label>
+            <span class="discount">-10%</span>
+          </div>
+
+          <div class="checkbox-row">
+            <input
+              type="checkbox"
+              id="discount15"
+              data-discount="15"
+              class="discount-check"
+            />
+            <label for="discount5">More Than Three Bookings</label>
+            <span class="discount">-15%</span>
+          </div>
+
+          <div class="form-group" style="margin-top: var(--sm-space)">
+            <label for="discountCode">Discount Code</label>
+            <div class="discount-row">
+              <input
+                type="text"
+                class="fomr-ctrl"
+                placeholder="LEVELUP20"
+                id="discountCode"
+              />
+              <button
+                class="btn outline-btn small-btn"
+                type="button"
+                id="applyCodeBtn"
+              >
+                Apply
+              </button>
             </div>
-          </article>
-
-          <article class="card">
-            <div class="card-img"><i class="fa-regular fa-image"></i></div>
-            <div class="card-body">
-              <h3 style="font-size: 0.95rem">Ultimate Gamer Pass</h3>
-              <div class="card-footer">
-                <span class="card-price" style="font-size: 1rem">R1 500</span>
-                <a href="packageDetails.html" class="btn small-btn outline-btn"
-                  >Quick View</a
-                >
-              </div>
-            </div>
-          </article>
-
-          <article class="card">
-            <div class="card-img"><i class="fa-regular fa-image"></i></div>
-            <div class="card-body">
-              <h3 style="font-size: 0.95rem">Esports Training Package</h3>
-              <div class="card-footer">
-                <span class="card-price" style="font-size: 1rem">R1 500</span>
-                <a href="packageDetails.html" class="btn small-btn outline-btn"
-                  >Quick View</a
-                >
-              </div>
-            </div>
-          </article>
-
-          <article class="card">
-            <div class="card-img"><i class="fa-regular fa-image"></i></div>
-            <div class="card-body">
-              <h3 style="font-size: 0.95rem">VIP Experience</h3>
-              <div class="card-footer">
-                <span class="card-price" style="font-size: 1rem">R1 500</span>
-                <a href="packageDetails.html" class="btn small-btn outline-btn"
-                  >Quick View</a
-                >
-              </div>
-            </div>
-          </article>
+          </div>
         </div>
-      </div>
-    </section>
+      </form>
+
+      <aside class="summary-box">
+        <h3 style="margin-bottom: var(--sm-space); font-size: 1rem">
+          Fee summary
+        </h3>
+
+        <div class="summary-box-row">
+          <span>Selected Package fee</span>
+          <span id="summaryDiscount">R0.00</span>
+        </div>
+
+        <div
+          class="summary-box-row summary-box-row-discount"
+          id="summaryCodeRow"
+        >
+          <span>Booking Discount</span>
+          <span id="summaryDiscount">-0%</span>
+        </div>
+
+        <div class="summary-box-row summary-box-row-total">
+          <span>Qouted Total</span>
+          <span id="summaryTotal">R0.00</span>
+        </div>
+
+        <a
+          href="contact.html"
+          style="margin-top: var(--md-space)"
+          class="btn primary-btn block-btn"
+          >Get My Qoute</a
+        >
+      </aside>
+    </div>
 
     <!-- Footer Section-->
     <footer class="footer">
