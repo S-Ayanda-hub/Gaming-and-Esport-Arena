@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Fonts: Poppins for headings, Inter for body text.
+       Loaded once here — every other page's <head> needs this same line. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--Font Awesome Link-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Next Level Arena | Contact Us</title>
+  </head>
+
+  <body>
+    <!-- Header Section-->
+    <header class="navbar">
+      <div class="container inner-nav">
+        <a href="index.html" class="navbarLogo">
+          NEXT LEVEL <span>ARENA</span>
+        </a>
+
+        <button class="navbarToggle" id="navToggle" aria-label="Toggle Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <div class="navbarLinks" id="navbarLinks">
+          <a href="index.html" class="navLink">Home</a>
+          <a href="about.html" class="navLink navLink">About Us</a>
+          <a href="packages.html" class="navLink">Package</a>
+          <a href="packageDetails.html" class="navLink">Packages</a>
+          <a href="feeCalc.html" class="navLink">Calculator</a>
+          <a href="contact.html" class="navLink-active">Contact Us</a>
+          <a href="packages.html" class="btn primary-btn small-btn">Book Now</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Intro Section -->
+    <div class="container page-heading">
+      <span class="tag">Calculator Estimator</span>
+      <h1>Estimate Fees Instantly</h1>
+      <p class="muted-text">
+        Select your package and add-ons below to see a live quote.
+      </p>
+    </div>
+
+    <!-- Whats included / Quick Specs -->
+    <div class="container calc-grid" style="padding-bottom: var(--xl-space)">
+      <form onsubmit="return false;">
+        <!-- Step 1 -->
+        <div class="calc-step">
+          <span class="calc-step-label">01. Personal Registration</span>
+
+          <div class="form-group">
+            <label for="fullName">Full Name</label>
+            <input
+              type="text"
+              class="form-ctrl"
+              id="fullName"
+              placeholder="John Doe"
+            />
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="countryCode">Country Code</label>
+              <select class="form-ctrl" id="countryCode">
+                <option>+27</option>
+                <option>+44</option>
+                <option>+1</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input
+                type="tel"
+                id="phone"
+                class="form-ctrl"
+                placeholder="0800055555"
+              />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input
+              type="email"
+              id="email"
+              class="form-ctrl"
+              placeholder="you@example.com"
+            />
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="calc-step">
+          <span class="calc-step-label">02. Match Selection</span>
+
+          <div class="form-group">
+            <label for="packageSelect">Active Esports Package</label>
+
+            <select id="packageSelect" class="form-ctrl">
+              <option data-price="1500">
+                Esport Training Package - R1 500
+              </option>
+              <option data-price="750">Virtual Reality - R750</option>
+              <option data-price="750">
+                Racing Simulator Challange - R750
+              </option>
+              <option data-price="750">Escape Room Challenge - R750</option>
+              <option data-price="1500">Birthday Party Package - R1 500</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label>Squad Members</label>
+            <div class="stepper">
+              <button id="squadDecrease" type="button">
+                <i class="fa-solid fa-minus"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="calc-step">
+          <span class="calc-step-label">03. Squad Booster</span>
+
+          <div class="checkbox-row">
+            <input
+              type="checkbox"
+              id="discount5"
+              data-discount="5"
+              class="discount-check"
+            />
+            <label for="discount5">Two Bookings</label>
+            <span class="discount">-5%</span>
+          </div>
+
+          <div class="checkbox-row">
+            <input
+              type="checkbox"
+              id="discount10"
+              data-discount="10"
+              class="discount-check"
+            />
+            <label for="discount5">Three Bookings</label>
+            <span class="discount">-10%</span>
+          </div>
+
+          <div class="checkbox-row">
+            <input
+              type="checkbox"
+              id="discount15"
+              data-discount="15"
+              class="discount-check"
+            />
+            <label for="discount5">More Than Three Bookings</label>
+            <span class="discount">-15%</span>
+          </div>
+
+          <div class="form-group" style="margin-top: var(--sm-space)">
+            <label for="discountCode">Discount Code</label>
+            <div class="discount-row">
+              <input
+                type="text"
+                class="fomr-ctrl"
+                placeholder="LEVELUP20"
+                id="discountCode"
+              />
+              <button
+                class="btn outline-btn small-btn"
+                type="button"
+                id="applyCodeBtn"
+              >
+                Apply
+              </button>
+            </div>
+          </div>
+        </div>
+      </form>
+
+      <aside class="summary-box">
+        <h3 style="margin-bottom: var(--sm-space); font-size: 1rem">
+          Fee summary
+        </h3>
+
+        <div class="summary-box-row">
+          <span>Selected Package fee</span>
+          <span id="summaryDiscount">R0.00</span>
+        </div>
+
+        <div
+          class="summary-box-row summary-box-row-discount"
+          id="summaryCodeRow"
+        >
+          <span>Booking Discount</span>
+          <span id="summaryDiscount">-0%</span>
+        </div>
+
+        <div class="summary-box-row summary-box-row-total">
+          <span>Qouted Total</span>
+          <span id="summaryTotal">R0.00</span>
+        </div>
+
+        <a
+          href="contact.html"
+          style="margin-top: var(--md-space)"
+          class="btn primary-btn block-btn"
+          >Get My Qoute</a
+        >
+      </aside>
+    </div>
+
+    <!-- Footer Section-->
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div>
+          <a href="index.html" class="navbarLogo"
+            >NEXT LEVEL <span>ARENA</span></a
+          >
+          <p class="muted-text" style="margin-top: 0.75rem; max-width: 32inch">
+            Competitive gaming arena built for players who take their next level
+            seriously.
+          </p>
+          <div class="footer-socials" style="margin-top: var(--space-sm)">
+            <a href="#" aria-label="Facebook"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+            <a href="#" aria-label="Twitter"
+              ><i class="fa-brands fa-x-twitter"></i
+            ></a>
+            <a href="#" aria-label="Instagram"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="#" aria-label="LinkedIn"
+              ><i class="fa-brands fa-linkedin-in"></i
+            ></a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Quick Links</h4>
+          <a href="index.html">Home</a>
+          <a href="packges.html">Our Packages</a>
+          <a href="about.html">About Us</a>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Support</h4>
+          <a href="contact.html">Contact Support</a>
+          <a href="feeCalc.html">Fee Calculator</a>
+          <a href="#">FAQs</a>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Connect</h4>
+          <a href="contact.html">Get in Touch</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+
+        <div class="container footer-bottom">
+          <span>&copy; 2026 Next Level Arena. All rights reserved.</span>
+          <div>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <nav class="mobile-tab">
+      <a href="index.html" class="active"
+        ><i class="fa-solid fa-house"></i> <span>Home</span></a
+      >
+      <a href="packages.html"
+        ><i class="fa-solid fa-box"></i> <span>Packages</span></a
+      >
+      <a href="feeCalc.html"
+        ><i class="fa-solid fa-calculator"></i> <span>Fee Calculator</span></a
+      >
+      <a href="contact.html"
+        ><i class="fa-solid fa-envelope"></i> <span>Contact</span></a
+      >
+    </nav>
+
+    <!-- JS -->
+    <script src="app.js"></script>
+  </body>
+</html>
