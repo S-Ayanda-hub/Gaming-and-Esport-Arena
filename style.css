@@ -459,3 +459,123 @@ select {
     font-size: 2rem;
   }
 }
+
+/* About Section */
+.about-intro-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--lg-space);
+  align-items: center;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--sm-space);
+}
+
+.stat-card {
+  background-color: var(--surface-color);
+  border: 1px solid var(--border-color);
+  border-radius: var(--md-radius);
+  padding: var(--md-space);
+}
+
+.stat-card-number {
+  font-family: var(--heading-font);
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.stat-card-label {
+  color: var(--muted-text);
+  font-size: 0.8rem;
+}
+
+.mission-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: var(--lg-space);
+  align-items: center;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--md-space);
+}
+
+.feature-card {
+  background-color: var(--surface-color);
+  border: 1px solid var(--border-color);
+  border-radius: var(--md-radius);
+  padding: var(--md-space);
+  text-align: center;
+}
+
+.feature-card-icon {
+  width: 44px;
+  height: 44px;
+  margin-inline: auto;
+  margin-bottom: var(--sm-space);
+  border-radius: var(--md-radius);
+  background-color: var(--purple-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.feature-card-icon i {
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+.feature-card h3 {
+  font-size: 1rem;
+  margin-bottom: 0.4rem;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--md-space);
+}
+
+.team-card-photo {
+  aspect-ratio: 4 / 3;
+  background-color: var(--surface-color-2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--purple-color);
+}
+
+.team-card-photo i {
+  font-size: 2.5rem;
+}
+
+.team-card-body {
+  padding: var(--sm-space);
+  text-align: center;
+}
+
+.team-card-body strong {
+  display: block;
+}
+
+/* 768px Media Queries */
+@media (max-width: 768px) {
+  .about-intro-grid,
+  .mission-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .feature-grid,
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+}
