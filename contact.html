@@ -45,181 +45,151 @@
     </header>
 
     <!-- Intro Section -->
-    <div class="container page-heading">
-      <span class="tag">Calculator Estimator</span>
-      <h1>Estimate Fees Instantly</h1>
+    <div class="container page-heading" style="padding-bottom: 0">
+      <span class="tag">Support &amp; Bookings</span>
+      <h1>Get In Touch With Our Team</h1>
       <p class="muted-text">
-        Select your package and add-ons below to see a live quote.
+        Drop us a message for tournament, party, or membership inquiries.
       </p>
     </div>
 
     <!-- Whats included / Quick Specs -->
-    <div class="container calc-grid" style="padding-bottom: var(--xl-space)">
-      <form onsubmit="return false;">
-        <!-- Step 1 -->
-        <div class="calc-step">
-          <span class="calc-step-label">01. Personal Registration</span>
-
-          <div class="form-group">
-            <label for="fullName">Full Name</label>
-            <input
-              type="text"
-              class="form-ctrl"
-              id="fullName"
-              placeholder="John Doe"
-            />
-          </div>
-
-          <div class="form-row">
-            <div class="form-group">
-              <label for="countryCode">Country Code</label>
-              <select class="form-ctrl" id="countryCode">
-                <option>+27</option>
-                <option>+44</option>
-                <option>+1</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="phone">Phone Number</label>
-              <input
-                type="tel"
-                id="phone"
-                class="form-ctrl"
-                placeholder="0800055555"
-              />
-            </div>
-          </div>
-
-          <div class="form-group">
-            <label for="email">Email Address</label>
-            <input
-              type="email"
-              id="email"
-              class="form-ctrl"
-              placeholder="you@example.com"
-            />
-          </div>
+    <div class="container contact-grid" style="padding-block: var(--xl-space)">
+      <form class="contact-form" onsubmit="return false;">
+        <div class="form-group">
+          <label for="contactName">Full Name</label>
+          <input
+            type="text"
+            id="contactName"
+            placeholder="Enter your name"
+            class="form-ctrl"
+          />
         </div>
 
-        <!-- Step 2 -->
-        <div class="calc-step">
-          <span class="calc-step-label">02. Match Selection</span>
-
-          <div class="form-group">
-            <label for="packageSelect">Active Esports Package</label>
-
-            <select id="packageSelect" class="form-ctrl">
-              <option data-price="1500">
-                Esport Training Package - R1 500
-              </option>
-              <option data-price="750">Virtual Reality - R750</option>
-              <option data-price="750">
-                Racing Simulator Challange - R750
-              </option>
-              <option data-price="750">Escape Room Challenge - R750</option>
-              <option data-price="1500">Birthday Party Package - R1 500</option>
-            </select>
-          </div>
-
-          <div class="form-group">
-            <label>Squad Members</label>
-            <div class="stepper">
-              <button id="squadDecrease" type="button">
-                <i class="fa-solid fa-minus"></i>
-              </button>
-            </div>
-          </div>
+        <div class="form-group">
+          <label for="contactEmail">Email Address</label>
+          <input
+            type="email"
+            id="contactEmail"
+            placeholder="Enter your email address"
+            class="form-ctrl"
+          />
         </div>
 
-        <!-- Step 3 -->
-        <div class="calc-step">
-          <span class="calc-step-label">03. Squad Booster</span>
-
-          <div class="checkbox-row">
-            <input
-              type="checkbox"
-              id="discount5"
-              data-discount="5"
-              class="discount-check"
-            />
-            <label for="discount5">Two Bookings</label>
-            <span class="discount">-5%</span>
-          </div>
-
-          <div class="checkbox-row">
-            <input
-              type="checkbox"
-              id="discount10"
-              data-discount="10"
-              class="discount-check"
-            />
-            <label for="discount5">Three Bookings</label>
-            <span class="discount">-10%</span>
-          </div>
-
-          <div class="checkbox-row">
-            <input
-              type="checkbox"
-              id="discount15"
-              data-discount="15"
-              class="discount-check"
-            />
-            <label for="discount5">More Than Three Bookings</label>
-            <span class="discount">-15%</span>
-          </div>
-
-          <div class="form-group" style="margin-top: var(--sm-space)">
-            <label for="discountCode">Discount Code</label>
-            <div class="discount-row">
-              <input
-                type="text"
-                class="fomr-ctrl"
-                placeholder="LEVELUP20"
-                id="discountCode"
-              />
-              <button
-                class="btn outline-btn small-btn"
-                type="button"
-                id="applyCodeBtn"
-              >
-                Apply
-              </button>
-            </div>
-          </div>
+        <div class="form-group">
+          <label for="contactMessage">Message Text</label>
+          <textarea
+            placeholder="Type your tournament, party or membership details here..."
+            id="contactMessage"
+            class="form-ctrl"
+          ></textarea>
         </div>
       </form>
 
-      <aside class="summary-box">
-        <h3 style="margin-bottom: var(--sm-space); font-size: 1rem">
-          Fee summary
-        </h3>
+      <aside>
+        <div class="info-card">
+          <h3 style="margin-bottom: var(--sm-space); font-size: 1rem">
+            Area Coordinates
+          </h3>
 
-        <div class="summary-box-row">
-          <span>Selected Package fee</span>
-          <span id="summaryDiscount">R0.00</span>
+          <div class="info-card-row">
+            <i class="fa-solid fa-location-dot"></i>
+            <div>
+              <strong>HQ Address</strong>
+              <p>42 LevelUp Lane, Durban KZn</p>
+            </div>
+          </div>
+
+          <div class="info-card-row">
+            <i class="fa-solid fa-phone"></i>
+            <div>
+              <strong>Hotline</strong>
+              <p>+27 71 234 5678</p>
+            </div>
+          </div>
+
+          <div class="info-card-row">
+            <i class="fa-solid fa-clock"></i>
+            <div>
+              <strong>Operating Hours</strong>
+              <p>Mon – Sun, 10:00 – 22:00</p>
+            </div>
+          </div>
+
+          <div class="footer-socials" style="margin-top: var(spae)" ;>
+            <a href="#" aria-label="Facebook"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+            <a href="#" aria-label="Twitter"
+              ><i class="fa-brands fa-x-twitter"></i
+            ></a>
+            <a href="#" aria-label="Instagram"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="#" aria-label="LinkedIn"
+              ><i class="fa-brands fa-linkedin-in"></i
+            ></a>
+          </div>
         </div>
-
-        <div
-          class="summary-box-row summary-box-row-discount"
-          id="summaryCodeRow"
-        >
-          <span>Booking Discount</span>
-          <span id="summaryDiscount">-0%</span>
-        </div>
-
-        <div class="summary-box-row summary-box-row-total">
-          <span>Qouted Total</span>
-          <span id="summaryTotal">R0.00</span>
-        </div>
-
-        <a
-          href="contact.html"
-          style="margin-top: var(--md-space)"
-          class="btn primary-btn block-btn"
-          >Get My Qoute</a
-        >
       </aside>
     </div>
+
+    /*FAQ Portion */
+    <section
+      class="section"
+      style="background-color: var(--bg-color-alt); padding-top: 0"
+    >
+      <div class="container">
+        <div class="section-heading">
+          <span class="tag">Support Well</span>
+          <h2>Frequently Asked Questions</h2>
+        </div>
+
+        <details class="faq-items">
+          <summary>
+            Any hardware specifications do you offer?
+            <i class="fa-solid fa-chevron-down"></i>
+          </summary>
+          <p>
+            Every rig runs an RTX 4090, Ryzen 9 CPU, 32GB RAM, and a 240Hz+
+            monitor, alongside a full peripheral wall to choose from.
+          </p>
+        </details>
+
+        <details class="faq-items">
+          <summary>
+            Can I bring my own gaming peripherals?
+            <i class="fa-solid fa-chevron-down"></i>
+          </summary>
+          <p>
+            Yes — mice, keyboards, and headsets are welcome. Controllers for
+            console booths must be checked in with staff first.
+          </p>
+        </details>
+
+        <details class="faq-items">
+          <summary>
+            Do you host private birthday parties?
+            <i class="fa-solid fa-chevron-down"></i>
+          </summary>
+          <p>
+            Absolutely. Our Birthday Party Package reserves a private section of
+            the arena with multiplayer setups for up to 20 guests.
+          </p>
+        </details>
+
+        <details class="faq-items">
+          <summary>
+            How does the VIP membership system
+            <i class="fa-solid fa-chevron-down"></i>
+          </summary>
+          <p>
+            VIP members get priority booking, a discounted hourly rate, and
+            access to exclusive tournament seeding events.
+          </p>
+        </details>
+      </div>
+    </section>
 
     <!-- Footer Section-->
     <footer class="footer">
