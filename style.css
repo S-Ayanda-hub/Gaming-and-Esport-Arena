@@ -1,0 +1,29 @@
+:root {
+  --bg-color: #0a0e1a;
+  --bg-color-alt: #0d1224;
+  --surface-color: #141a2e;
+  --surface-color-2: #1b2238;
+
+  --cyan-color: #22d3ee;
+  --pink-color: #ec1e6b;
+  --purple-color: #6c5ce7;
+
+  --text-color: #f5f6fa;
+  --muted-text: #8b93a7;
+  --border-color: #232a42;
+
+  --heading-font: "Poppins", "Segoe UI", sans-serif;
+  --body-font: "Inter", "Segoe UI", sans-serif;
+
+  --xs-space: 8px;
+  --sm-space: 16px;
+  --md-space: 24px;
+  --lg-space: 40px;
+  --xl-space: 64px;
+
+  --sm-radius: 6px;
+  --md-radius: 12px;
+  --pill-radius: 999px;
+
+  --max-width: 1180px;
+}
