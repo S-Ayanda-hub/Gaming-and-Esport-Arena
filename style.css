@@ -773,3 +773,159 @@ select {
     grid-template-columns: 1fr;
   }
 }
+
+/* Fee Calc Section */
+.calc-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: var(--lg-space);
+  align-items: start;
+}
+
+.calc-step {
+  margin-bottom: var(--lg-space);
+}
+
+.calc-step-label {
+  color: var(--cyan-color);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.05rem;
+  text-transform: uppercase;
+  margin-bottom: var(--sm-space);
+  display: block;
+}
+
+.form-group {
+  margin-bottom: var(--sm-space);
+}
+
+.form-group label {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--muted-text);
+  margin-bottom: 0.3rem;
+}
+
+.form-ctrl {
+  width: 100%;
+  padding: 0.7rem 0.9rem;
+  background-color: var(--surface-color);
+  border: 1px solid var(--border-color);
+  border-radius: var(--sm-radius);
+  color: var(--text-color);
+  font-size: 0.9rem;
+}
+
+.form-ctrl:focus {
+  outline: none;
+  border-color: var(--cyan-color);
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--sm-space);
+}
+
+.stepper {
+  display: flex;
+  align-items: center;
+  gap: var(--sm-space);
+}
+
+.stepper button {
+  width: 36px;
+  height: 36px;
+  border-radius: var(--sm-radius);
+  border: 1px solid var(--border-color);
+  background-color: var(--surface-color);
+  color: var(--text-color);
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.stepper span {
+  min-width: 1.5rem;
+  text-align: center;
+  font-synthesis-weight: 600;
+}
+
+.checkbox-row {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding-block: 0.5rem;
+}
+
+.checkbox-row label {
+  flex: 1;
+  font-size: 0.9rem;
+}
+
+.checkbox-row .discount {
+  color: var(--cyan-color);
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+.discount-row {
+  display: flex;
+  gap: var(--xs-space);
+}
+
+.discount-row .form-ctrl {
+  flex: 1;
+}
+
+/* Fee SUmmary Box */
+.summary-box {
+  background-color: var(--surface-color);
+  border: 1px solid var(--border-color);
+  border-radius: var(--md-radius);
+  padding: var(--md-space);
+  position: sticky;
+  top: 90px;
+}
+
+.summary-box-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  padding-block: 0.4rem;
+  color: var(--muted-text);
+}
+
+.summary-box-row-discount {
+  color: var(--cyan-color);
+}
+
+.summary-box-row-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  border-top: 1px solid var(--border-color);
+  margin-top: var(--sm-space);
+  padding-top: var(--sm-space);
+  font-weight: 700;
+}
+
+.summary-box-row-total span:last-child {
+  color: var(--pink-color);
+  font-size: 1.3rem;
+}
+
+/* Fee Calc 768px Media Queries */
+@media (max-width: 768px) {
+  .calc-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .summary-box {
+    position: static;
+  }
+}
