@@ -20,8 +20,8 @@ package choice, squad size, booking discounts, and promo codes.
 | Home | `index.html` | Hero section, featured packages, testimonials |
 | About Us | `about.html` | Mission statement, stats, leadership team |
 | Packages | `packages.html` | Filterable pricing table of all packages |
-| Package Detail | `package-detail.html` | Single package breakdown with gallery |
-| Fee Calculator | `fee-calculator.html` | Live-updating quote calculator |
+| Package Detail | `packageDetails.html` | Single package breakdown with gallery |
+| Fee Calculator | `feeCalc.html` | Live-updating quote calculator |
 | Contact Us | `contact.html` | Contact form, location info, FAQ accordion |
 
 ## Features
@@ -48,8 +48,8 @@ next-level-arena/
 ├── index.html
 ├── about.html
 ├── packages.html
-├── package-detail.html
-├── fee-calculator.html
+├── packageDetails.html
+├── feeCalc.html
 ├── contact.html
 ├── css/
 │   └── all.css
