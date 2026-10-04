@@ -48,8 +48,8 @@ next-level-arena/
 ├── index.html
 ├── about.html
 ├── packages.html
-├── package-detail.html
-├── fee-calculator.html
+├── packageDetails.html
+├── feeCalc.html
 ├── contact.html
 ├── css/
 │   └── all.css
