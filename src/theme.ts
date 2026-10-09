@@ -1,6 +1,6 @@
 // Shared design tokens for the whole app.
 export const colors = {
-  bg: '#0B0E14',
+  bg: '#f2f5fa',
   card: '#141B26',
   cardAlt: '#1A2333',
   line: '#243044',

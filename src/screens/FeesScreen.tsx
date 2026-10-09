@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Alert, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import { Screen, Section, Field, Button } from '../components/ui';
 import { AppHeader } from '../components/shell';
