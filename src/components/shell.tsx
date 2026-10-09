@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Image } from 'react-native';
 import { colors, radius, spacing, type } from '../theme';
 import { CONTACT } from '../data/offerings';
 import { Button } from './ui';
@@ -7,7 +7,7 @@ import { Button } from './ui';
 export function AppHeader() {
   return (
     <View style={styles.header}>
-      <View style={styles.logoDot} />
+      <Image source={require('../assets/logo.png')} style={styles.logo} resizeMode='contain' />
       <View>
         <Text style={styles.brand1}>{CONTACT.brandLine1}</Text>
         <Text style={styles.brand2}>{CONTACT.brandLine2}</Text>
@@ -48,7 +48,7 @@ const styles = StyleSheet.create({
     borderBottomWidth: 1,
     borderBottomColor: colors.line,
   },
-  logoDot: { width: 34, height: 34, borderRadius: 10, backgroundColor: colors.accent },
+  logo: { width: 34, height: 34, borderRadius: 10 },
   brand1: { fontSize: 13, fontWeight: '800', letterSpacing: 2, color: colors.text },
   brand2: { fontSize: 10, fontWeight: '600', letterSpacing: 3, color: colors.muted },
   cta: {
