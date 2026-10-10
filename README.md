@@ -15,14 +15,20 @@ package choice, squad size, booking discounts, and promo codes.
 
 ## Pages
 
-| Page | File | Description |
-|---|---|---|
-| Home | `index.html` | Hero section, featured packages, testimonials |
-| About Us | `about.html` | Mission statement, stats, leadership team |
-| Packages | `packages.html` | Filterable pricing table of all packages |
-| Package Detail | `packageDetails.html` | Single package breakdown with gallery |
-| Fee Calculator | `feeCalc.html` | Live-updating quote calculator |
-| Contact Us | `contact.html` | Contact form, location info, FAQ accordion |
+| Page           | File                     | Description                                   |
+| -------------- | ------------------------ | --------------------------------------------- |
+| Home           | `index.html`             | Hero section, featured packages, testimonials |
+| About Us       | `about.html`             | Mission statement, stats, leadership team     |
+| Packages       | `packages.html`          | Filterable pricing table of all packages      |
+| Package Detail | `packageDetails.html`    | Single package breakdown with gallery         |
+| Fee Calculator | `feeCalc.html`           | Live-updating quote calculator                |
+| Contact Us     | `contact.html`           | Contact form, location info, FAQ accordion    |
+| Contact Us     | `birthdayParty.html`     | Info about birthday party package             |
+| Contact Us     | `escapeRoom.html`        | Info about escape room package                |
+| Contact Us     | `esportsTraining.html`   | Info about esports training package           |
+| Contact Us     | `racingSImulator.html`   | Info about racing simulator package           |
+| Contact Us     | `ultimateGamerPass.html` | Info about ultimate gamer pass package        |
+| Contact Us     | `virtualReality.html`    | Info about virtual reality training package   |
 
 ## Features
 
@@ -48,6 +54,12 @@ next-level-arena/
 ├── index.html
 ├── about.html
 ├── packages.html
+├── birthdayParty.html
+├── escapeRoom.html
+├── esportsTraining.html
+├── racingSImulator.html
+├── ultimateGamerPass.html
+├── virtualReality.html
 ├── packageDetails.html
 ├── feeCalc.html
 ├── contact.html
