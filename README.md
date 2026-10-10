@@ -23,12 +23,12 @@ package choice, squad size, booking discounts, and promo codes.
 | Package Detail | `packageDetails.html`    | Single package breakdown with gallery         |
 | Fee Calculator | `feeCalc.html`           | Live-updating quote calculator                |
 | Contact Us     | `contact.html`           | Contact form, location info, FAQ accordion    |
-| Contact Us     | `birthdayParty.html`     | Info about birthday party package             |
-| Contact Us     | `escapeRoom.html`        | Info about escape room package                |
-| Contact Us     | `esportsTraining.html`   | Info about esports training package           |
-| Contact Us     | `racingSImulator.html`   | Info about racing simulator package           |
-| Contact Us     | `ultimateGamerPass.html` | Info about ultimate gamer pass package        |
-| Contact Us     | `virtualReality.html`    | Info about virtual reality training package   |
+| Birthday Party     | `birthdayParty.html`     | Info about birthday party package             |
+| Escape Room     | `escapeRoom.html`        | Info about escape room package                |
+| eSports Training     | `esportsTraining.html`   | Info about esports training package           |
+| Racing Simulator     | `racingSImulator.html`   | Info about racing simulator package           |
+| Ultimate Gamer Pass     | `ultimateGamerPass.html` | Info about ultimate gamer pass package        |
+| Virtual Reality     | `virtualReality.html`    | Info about virtual reality training package   |
 
 ## Features
 
